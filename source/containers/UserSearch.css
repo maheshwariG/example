@@ -1,0 +1,21 @@
+.searchField {
+    display: block;
+    width: 80%;
+    padding: .375rem .75rem;
+    margin: 30px auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.listHeading {
+    font-size: 2rem;
+    padding: 0 30px 30px 0;
+    color: red;
+}
+
+@media only screen and (min-width: 600px) {
+    .searchField {
+        width: 30%;
+    }
+  }

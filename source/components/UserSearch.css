@@ -1,0 +1,13 @@
+.mainList {
+    padding: 1rem 2rem;
+    background-color: bisque;
+    list-style: none;
+    font-size: 1.2rem;
+}
+.mainSpan span {
+    font-size: 1.3rem;
+    padding-right: 30px;
+}
+.search {
+    cursor: pointer;
+}

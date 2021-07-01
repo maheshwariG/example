@@ -1,0 +1,43 @@
+{
+  "name": "ReactReduxWebpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clear": "rimraf build",
+    "build:server": "webpack --config webpack.server.config.js",
+    "build:client": "webpack --config webpack.client.config.js",
+    "start:server": "node build/server/bundle.js",
+    "dev:server": "nodemon --ignore build --exec 'run-s clear build:server start:server'",
+    "dev:client": "webpack serve --config webpack.client.config.js",
+    "dev": "yarn build:client && yarn build:server && yarn start:server"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "express": "4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router": "^4.1.2",
+    "react-router-config": "^1.0.0-beta.3",
+    "react-router-dom": "^4.1.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-merge": "^5.7.3",
+    "webpack-node-externals": "^2.5.2",
+    "nodemon": "^2.0.7",
+    "history": "4.6.3",
+    "axios": "^0.21.0",
+    "d3": "^6.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

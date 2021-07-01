@@ -1,0 +1,6 @@
+.linkNav a {
+    padding: 20px;
+}
+.active {
+    color: red;
+  }
